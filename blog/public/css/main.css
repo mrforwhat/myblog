@@ -1,0 +1,157 @@
+body {
+    background: #333;
+    color: #ccc;
+}
+
+
+/*文字提示框*/
+
+.alert-box {
+    display: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100px;
+    min-height: 40px;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.nav li {
+    cursor: pointer;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index:1100;
+}
+
+.loading-box {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:1101;
+}
+
+.loading-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    animation:flash infinite 1.2s ease-in-out both;
+}
+.loading-dot:after{
+    content: '';
+    width:12px;
+    height:12px;
+    background:#fff;
+    border-radius: 50%;
+    display: block;
+}
+.dot1{
+    transform:rotate(30deg);
+    animation-delay: 0.1s;
+}
+.dot2{
+    transform:rotate(60deg);
+    animation-delay: 0.2s;
+}
+.dot3{
+    transform:rotate(90deg);
+    animation-delay: 0.3s;
+}
+.dot4{
+    transform:rotate(120deg);
+    animation-delay: 0.4s;
+}
+.dot5{
+    transform:rotate(150deg);
+    animation-delay: 0.5s;
+}
+.dot6{
+    transform:rotate(180deg);
+    animation-delay: 0.6s;
+}
+.dot7{
+    transform:rotate(210deg);
+    animation-delay: 0.7s;
+}
+.dot8{
+    transform:rotate(240deg);
+    animation-delay: 0.8s;
+}
+.dot9{
+    transform:rotate(270deg);
+    animation-delay: 0.9s;
+}
+.dot10{
+    transform:rotate(300deg);
+    animation-delay: 1s;
+}
+.dot11{
+    transform:rotate(330deg);
+    animation-delay: 1.1s;
+}
+.dot12{
+    transform:rotate(360deg);
+    animation-delay: 1.2s;
+}
+/* 闪烁 */
+@-webkit-keyframes flash{
+    0%,50%,100%{opacity:1;}
+    25%,75%{opacity:0;}
+}
+@-moz-keyframes flash{
+    0%,50%,100%{opacity:1;}
+    25%,75%{opacity:0;}
+}
+@-ms-keyframes flash{
+    0%,50%,100%{opacity:1;}
+    25%,75%{opacity:0;}
+}
+@keyframes flash{
+    0%,50%,100%{opacity:1;}
+    25%,75%{opacity:0;}
+}
+
+
+/*辅助样式*/
+
+.fl-left {
+    float: left;
+}
+
+.fl-right {
+    float: right;
+}
+
+.no-pointer {
+    pointer-events: none;
+}
+
+
+/*辅助样式*/
+
+.recent-comment {
+    position: relative;
+    margin: 20px;
+    padding-left: 65px;
+}
+
+.recent-comment .avatar {
+    position: absolute;
+    left: 5px;
+}
