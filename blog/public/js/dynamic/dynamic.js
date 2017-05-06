@@ -52,7 +52,7 @@ $(function() {
         // $commentText.append("<br>" + encodeHtml(currentText));
         publishComment($article, $commentText, currentText);
     });
-    
+
     // 加载文章列表
     function loadEssayList() {
         $.ajax({

@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var marked = require('marked');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('frame');
@@ -30,6 +31,13 @@ router.get('/loadnote', function(req, res) {
     console.log(marked('I am using __markdown__.'));
     res.render('note');
 });
+router.get('/loadindex',function(req, res){
+	res.render('index');
+});
+// 获取动态页
+router.get('/loaddynamic',function(req,res){
+	res.render('dynamic');
+})
 // 获取文章列表
 router.post('/loadEssayList', function(req, res) {
     var filePath = "./resource/static_db/essay.json";
@@ -40,13 +48,13 @@ router.post('/loadEssayList', function(req, res) {
 router.post('/publishComment', function(req, res) {
     var params = req.body;
     var reviewers = {};
-
+    
     reviewers['ip'] = params.ip;
     reviewers['id'] = params.id;
     reviewers['content'] = params.content;
     reviewers['targetUser'] = params.targetUser;
     reviewers['messageTime'] = params.messageTime;
-
+  
     var userFilePath = "./resource/static_db/user.json";
     var essayPath = "./resource/static_db/essay.json";
     // 读取用户文件
@@ -78,8 +86,10 @@ router.post('/publishComment', function(req, res) {
 });
 
 function getCurrentComment(id) {
+    writeStaticFile(essayPath,JSON.stringify(essayList));
+    res.json(reviewers);
+});
 
-}
 //读取文件
 function readStaticFile(filePath) {
     var fs = require('fs');
