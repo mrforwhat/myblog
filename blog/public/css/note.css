@@ -1,0 +1,183 @@
+.side-nav {
+    background: #232323;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 940px;
+    padding: 120px 0;
+}
+.side-nav ul{
+	margin:0;
+	padding:0;
+}
+.side-nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	cursor: pointer;
+	width:100%;
+	line-height: 45px;
+	height: 45px;	
+	color:#FFF;
+	padding:0 10px 0 25px;
+	font-size: 18px;
+}
+.side-nav ul li:hover{
+	background:#777;
+}
+.side-nav ul li.active{
+	background:#777;
+	border-left:4px solid orange;
+}
+.edit-container {
+    width: 80%;
+    padding-top: 50px;
+}
+
+.edit-container .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.edit-container .container-fluid .row {
+    margin: 0;
+    padding: 0;
+}
+
+.edit-container .container-fluid .row .col-md-3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #555;
+    height: 890px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.slide-left {
+    width: 0;
+    transition: all 1s;
+}
+
+.slide-right {
+    width: 25%;
+    transition: all 1s;
+}
+
+#flex-left-btn {
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    color: pink;
+    cursor: pointer;
+}
+
+#flex-left-btn:hover {
+    transform: translate(-30px);
+    transition: all 1s;
+}
+
+.edit-container .container-fluid .row .col-md-9 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #555;
+    height: 890px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#flex-right-btn {
+    position: absolute;
+    top: 50%;
+    left: -18px;
+    color: pink;
+    cursor: pointer;
+    display: none;
+}
+
+#flex-right-btn:hover {
+    transform: translate(30px);
+    transition: all 1s;
+}
+
+.essay-item {
+	position: relative;
+    width: 100%;
+    padding: 15px 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid #EEE;
+}
+
+.essay-item:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.edit-list .essay-item:nth-child(1) {
+    border-bottom: 1px dashed orange;
+}
+
+.edit-list .essay-item:nth-child(1):hover {
+    color: orange;
+}
+
+.essay-item .publish-time {
+    font-size: 12px;
+    color: #ddd;
+}
+.essay-item .essay-setting{
+	position: absolute;
+	top:50%;
+	right:20px;
+}
+.edit-content {
+    color: #fff;
+}
+
+#editor {
+    margin: 0;
+    height: 890px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+}
+
+.raw-edidor,
+.raw-essay {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background: #deb887;
+    overflow: auto;
+}
+
+.raw-edidor {
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: #3f3f3f;
+    font-size: 14px;
+    font-family: 'Monaco', courier, monospace;
+    padding: 20px;
+}
+#save-essay{
+	position: fixed;
+	top: 60px;
+    right: 15px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+}
+#save-essay:hover{
+	color:orange;
+}
+code {
+    color: #f66;
+}
+
+footer {
+    background: #222;
+}

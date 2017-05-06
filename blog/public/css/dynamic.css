@@ -1,0 +1,352 @@
+
+@media screen and (max-width: 1200px) {
+    #about-me{
+        display: none;
+    }
+}
+/*辅助样式*/
+
+#dynamic-container {
+    margin: 50px auto;
+}
+
+.banner-row {
+    margin: 20px auto;
+}
+
+#banner {
+    min-width: 650px;
+}
+
+#myCarousel .carousel-indicators li {
+    border: 1px solid black;
+}
+
+
+/*关于我*/
+
+#about-me {
+    min-width: 360px;
+    min-height: 280px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: 0 0 2px white inset;
+    color: #ccc;
+}
+
+#about-me .radius-btn {
+    position: relative;
+    box-shadow: 0 1px 2px #f2f2f2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#about-me .radius-btn:hover {
+    transform: rotate(360deg);
+    transition: 1s all;
+}
+
+.icon-info {
+    background-image: url(/images/icon-info.png);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-wx {
+    background-position: -5px 50px;
+}
+
+.icon-qq {
+    background-position: -37px 75px;
+}
+
+.icon-message {
+    background-position: -37px 100px;
+}
+
+.icon-location {
+    background-position: -5px 100px;
+}
+
+.icon-heart {
+    background-position: -5px 75px;
+}
+
+.icon-music {
+    display: inline-block;
+    background-image: url(/images/icon-music.png);
+    width: 14px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.icon-cd {
+    background-position: 0 0;
+}
+
+.icon-singer {
+    background-position: 0 16px;
+}
+
+#essay-container article::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #222;
+    top: 0;
+    right: -30px;
+}
+
+.panel-black .panel-heading {
+    position: relative;
+}
+
+.panel-black .panel-heading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: -15px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid rgba(0, 0, 0, 0.8);
+}
+
+.time-line {
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+
+
+/*黑色面板*/
+
+.panel-black {
+    background-color: #222;
+}
+
+.panel-black .panel-heading,
+.panel-black .panel-footer {
+    background: black;
+}
+
+.panel-black textarea {
+    margin: 30px 0 5px 0;
+    resize: none;
+    background: transparent;
+    color: #ccc;
+    border: 1px solid #555;
+    box-shadow: 0px -1px 5px white inset;
+}
+
+.panel-black figure {
+    float: left;
+    max-width: 200px;
+    margin: 5px 10px 5px 0;
+}
+
+.panel-black strong {
+    color: #FF9833;
+}
+
+
+/*发表评论*/
+
+.comment-area {
+    position: relative;
+    clear: both;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px 10px 5px 40px;
+}
+
+.comment-text {}
+
+.comment-area .message-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.comment-area .nickname {
+    color: white;
+    font-weight: bold;
+}
+
+.comment-area .avatar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.commentContainer {
+    display: none;
+    width: 100%;
+}
+
+.commentContainer .publishBtn {
+    background: #ccc;
+    padding: 2px 10px;
+}
+
+
+/*动态面板*/
+
+.panel-dynamic .panel-heading
+{
+    background: #333;
+    color: white;
+    text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.panel-dynamic .panel-body {
+    background: #333;
+    color: white;
+    padding:5px;
+}
+.panel-dynamic .panel-body ul{
+	padding:0;
+}
+.panel-dynamic .panel-body ul li{
+	list-style-type: none;
+	display: inline-block;
+	width:100%;
+	padding:5px 10px;
+}
+.panel-dynamic .panel-body ul li .sort{
+	margin-right: 5px;
+	color:#aaa;
+}
+.panel-dynamic .panel-body ul li:nth-child(1) .sort{
+	color:#ff0000;
+	font-weight: bold;
+}
+/*笔记面板*/
+
+.panel-note .panel-heading{
+    background: #333;
+    color: white;
+    text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.panel-note .panel-body {
+    background: #333;
+    color: white;
+}
+
+
+/*ps作品面板*/
+
+.panel-works {
+    background-color: #222;
+}
+
+.panel-works .panel-heading {
+    color: white;
+    text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.panel-works img:hover {
+    transform: rotate(360deg) scale(3);
+    transition: 1s all ease;
+    transform-origin: center;
+}
+
+.tip-action {
+    padding: 0 5px 5px 5px
+}
+
+.tip-action li {
+    display: list-item;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.tip-action .like {
+    margin: 0 10px;
+}
+
+footer {
+    background: #222;
+}
+
+
+/*轻松一刻面板*/
+
+.panel-music .panel-heading {
+    color: white;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.panel-music .panel-heading,
+.panel-music .panel-body {
+    background: linear-gradient(308deg, black, brown);
+}
+
+.disk,
+.song-info {
+    display: inline-block;
+}
+
+.song-info {
+    padding-left: 10px;
+}
+
+.disk {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.song-info .glyphicon-heart.active-red::before {
+    color: red;
+}
+
+audio {
+    width: 100%;
+}
+
+.w3 {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 2px;
+    margin: 2px;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-one {
+    flex: 1;
+}
+
+
+/*点赞*/
+
+.support.active .glyphicon-thumbs-up:before {
+    color: yellow;
+}
+
+.support.active .count {
+    color: yellow;
+}
+
+
+/*喜欢*/
+
+.like.active .glyphicon-heart:before {
+    color: red;
+}
+
+.like.active .count {
+    color: red;
+}

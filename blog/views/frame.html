@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>我的主页</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="alert-box"></div>
+    <div class="mask"></div>
+    <div class="loading-box">
+        <div class="loading-dot dot1"></div>
+        <div class="loading-dot dot2"></div>
+        <div class="loading-dot dot3"></div>
+        <div class="loading-dot dot4"></div>
+        <div class="loading-dot dot5"></div>
+        <div class="loading-dot dot6"></div>
+        <div class="loading-dot dot7"></div>
+        <div class="loading-dot dot8"></div>
+        <div class="loading-dot dot9"></div>
+        <div class="loading-dot dot10"></div>
+        <div class="loading-dot dot11"></div>
+        <div class="loading-dot dot12"></div>
+    </div>
+    <!-- 页头 -->
+    <header>
+        <!-- 导航 -->
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-panel-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">ForWhat</a>
+                </div>
+                <!-- 导航收缩面板 -->
+                <div class="collapse navbar-collapse" id="nav-panel-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a data-url="/loadindex">首页</a>
+                        </li>
+                        <li>
+                            <a data-url="/loaddynamic">我的动态</a>
+                        </li>
+                        <li>
+                            <a data-url="/loadnote">我的云笔记</a>
+                        </li>
+                        <li>
+                            <a data-url="not-open">Demo</a>
+                        </li>
+                        <!-- 下拉导航 -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                技术分享
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a data-url="not-open">HTML</a>
+                                </li>
+                                <li>
+                                    <a data-url="not-open">CSS</a>
+                                </li>
+                                <li>
+                                    <a data-url="not-open">JS</a>
+                                </li>
+                                <li class="divider" role="separator"></li>
+                                <li>
+                                    <a data-url="not-open">前端框架</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form role="search" class="navbar-form navbar-left"></form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="main-frame"></section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3 ">
+                    <h4>前端技术站</h4>
+                    <pre>慕课网-http://www.imooc.com/</pre>
+                    <pre>掘金-https://juejin.im/</pre>
+                    <pre>CSDN-http://blog.csdn.net/web/column.html</pre>
+                    <pre>优设资源-http://hao.uisdc.com/</pre>
+                    <pre>Bootstrap中文-http://www.bootcss.com/</pre>
+                </div>
+                <div class="col-md-3">
+                    <h4>最新留言</h4>
+                    <div class="recent-comment">
+                        <div class="avatar">
+                        <img class="img-circle" width="50px" height="50px" src="/images/default.jpeg" alt="">
+                        </div>
+                        <div class="comment-text">
+                            <span class="nickname">孤独的根号3</span> 
+                                我是来灌水的
+                            <div class="message-time">2017-05-04</div>
+                        </div>
+                    </div>
+                    <div class="recent-comment">
+                        <div class="avatar">
+                        <img class="img-circle" width="50px" height="50px" src="/images/default.jpeg" alt="">
+                        </div>
+                        <div class="comment-text">
+                            <span class="nickname">孤独的根号3</span> 
+                                我是来灌水的
+                            <div class="message-time">2017-05-04</div>
+                        </div>
+                    </div>
+                    <div class="recent-comment">
+                        <div class="avatar">
+                        <img class="img-circle" width="50px" height="50px" src="/images/default.jpeg" alt="">
+                        </div>
+                        <div class="comment-text">
+                            <span class="nickname">孤独的根号3</span> 
+                                我是来灌水的
+                            <div class="message-time">2017-05-04</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/vue.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/tools/moment.js"></script>
+<script src="/js/tools/personal-tool.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+
+</html>

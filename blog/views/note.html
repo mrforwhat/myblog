@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="css/note.css">
+<div class="side-nav pull-left">
+    <ul>
+        <li class="active">写动态</li>
+        <li>写笔记</li>
+        <li>随笔</li>
+    </ul>
+</div>
+<div class="edit-container pull-right">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="edit-list ">
+                    <div class="essay-item">
+                        <i class="icon fa fa-plus-circle"></i>
+                        <span style="margin-left:5px">添加文章</span>
+                        
+                    </div>
+                    <div class="essay-item">
+                        <i class="icon fa fa-file-text-o"></i>
+                        <span style="margin-left:5px">文章1</span>
+                        <p><span class="publish-time">2017-05-05 19:41</span></p>
+                        <div class="essay-setting">
+                        	<span class="glyphicon glyphicon-cog"></span>
+                        </div>
+                    </div>
+                    <div class="essay-item">
+                        <i class="icon fa fa-file-text-o"></i>
+                        <span style="margin-left:5px">文章2</span>
+                        <p><span class="publish-time">2017-05-05 19:58</span></p>
+                        <div class="essay-setting">
+                        	<span class="glyphicon glyphicon-cog"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="flex-left-btn">
+                    <span class="glyphicon glyphicon-triangle-left"></span>
+                    <span class="glyphicon glyphicon-triangle-left"></span>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <button id="save-essay" class="btn btn-primary">保存</button>
+                <div id="editor">
+                    <textarea class="raw-edidor pull-left" :value="input" @input="update"></textarea>
+                    <div class="raw-essay pull-right" v-html="compiledMarkdown"></div>
+                </div>
+                <div id="flex-right-btn">
+                    <span class="glyphicon glyphicon-triangle-right"></span>
+                    <span class="glyphicon glyphicon-triangle-right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/tools/marked.js"></script>
+<script src="js/note/note.js"></script>
