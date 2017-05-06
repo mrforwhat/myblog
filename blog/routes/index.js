@@ -88,7 +88,7 @@ router.post('/publishComment', function(req, res) {
 function getCurrentComment(id) {
     writeStaticFile(essayPath,JSON.stringify(essayList));
     res.json(reviewers);
-});
+}
 
 //读取文件
 function readStaticFile(filePath) {
